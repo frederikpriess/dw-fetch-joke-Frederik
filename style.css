@@ -1,3 +1,11 @@
 .dad-joke{
+    background-color: red;
+}
+
+.people {
     background-color: green;
+}
+
+.people-rick {
+    background-color: blue;
 }
