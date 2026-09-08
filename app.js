@@ -1,6 +1,8 @@
 const jokeElement = document.querySelector(".dad-joke")
 
-fetch("https://icanhazdadjoke.com")
+fetch("https://icanhazdadjoke.com", {
+    headers: { "Accept": "application/json" }
+})
     .then(response => {
         if (!response.ok) {
             throw new Error("kunne ikke hente joke")
@@ -9,11 +11,7 @@ fetch("https://icanhazdadjoke.com")
     })
 
     .then(data => {
-
-        jokeElement.textContent = data.joke
-        
-                
-                
+        jokeElement.textContent = data.joke               
     })
 
     .catch(error => {
