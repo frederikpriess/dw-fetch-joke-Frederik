@@ -1,3 +1,5 @@
+/* Faderlige jokes */
+
 const jokeElement = document.querySelector(".dad-joke")
 
 fetch("https://icanhazdadjoke.com", {
@@ -17,6 +19,8 @@ fetch("https://icanhazdadjoke.com", {
     .catch(error => {
         console.error("Fejl:", error)
     })
+
+/* Star Wars */
 
 const listElement = document.querySelector(".people")
 
