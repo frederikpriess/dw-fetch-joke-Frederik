@@ -63,7 +63,6 @@ async function renderDetail(data, targetLi) {
     const planetResponse = await fetch(data.homeworld)
     const planetData = await planetResponse.json()
 
-    
     const container = document.createElement("div")
     container.classList.add("details-box")
     container.innerHTML =
@@ -76,9 +75,7 @@ async function renderDetail(data, targetLi) {
             <li>Home world: ${planetData.name}</li>
             </ul>
         `
-
         targetLi.appendChild(container)
-
 }
  
 
